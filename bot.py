@@ -2,8 +2,8 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = os.getenv("8405278693:AAFISKWFDXnF9GrGm5PFBRQqFU1jmkTo4f0")  # Токен хранится в переменных Railway
-ADMIN_CHAT_ID = int(os.getenv("6054782646"))  # Твой chat_id для уведомлений
+TOKEN = os.getenv("TOKEN")  # Токен хранится в переменных Railway
+ADMIN_CHAT_ID = int(os.getenv("ADMIN_CHAT_ID"))  # Твой chat_id для уведомлений
 
 # Приветственное сообщение
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
